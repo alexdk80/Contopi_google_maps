@@ -1,0 +1,157 @@
+.form1{
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  font-family: Georgia,"Times New Roman", Times,serif;
+  }
+  h2{
+      color:grey;
+  }
+  .form1 h1{
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0px 0px 20px 0px;
+  color: #5C5C5C;
+  font-size: x-large;
+  }
+  .form1 ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  .form1 li{
+  display: block;
+  padding: 9px;
+  border:1px solid #A9A9A9;/*#DDDDDF;*/
+  margin-bottom: 30px;
+  border-radius: 3px;
+  }
+  .form1 li:last-child{
+  border: none;
+  margin-bottom: 0px;
+  text-align: center;
+  }
+  .form1 li>label{
+  display:block;
+  float: left;
+  margin-top: -19px;
+  background: #FFFFFF;
+  height: 14px;
+  padding: 2px 5px 2px 5px;
+  color: #A9A9A9;/*#B9B9B9;*/
+  font-size: 14px;
+  overflow: hidden;
+  font-family: Arial,Helvetica,sans-serif;
+  }
+  .form1 input[type="text"],  
+  .form1 input[type="date"],
+  .form1 input[type="datetime"],
+  .form1 input[type="email"],
+  .form1 input[type="number"],
+  .form1 input[type="search"],
+  .form1 input[type="time"],
+  .form1 input[type="url"],
+  .form1 input[type="password"],
+  .form1 textarea,
+  .for1 select
+  {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  padding: 0;
+  font-family: Georgia,"Times New Roman", Times, serif;  
+  
+  }
+  .form1 input[type="text"]:focus,
+  .form1 input[type="date"]:focus,
+  .form1 input[type="datetime"]:focus,
+  .form1 input[type="email"]:focus,
+  .form1 input[type="number"]:focus,
+  .form1 input[type="search"]:focus,
+  .form1 input[type="time"]:focus,
+  .form1 input[type="url"]:focus,
+  .form1 input[type="password"]:focus,
+  .form1 textarea:focus,
+  .form1 select:focus
+  {
+  
+  }  
+  .form1 li>span{
+  background: #F3F3F3;
+  display: block;
+  padding: 3px;
+  margin: 0 -9px -9px -9px;
+  text-align: center;
+  color: #C0C0C0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  }
+  .form1 textarea{
+  resize: none;
+  }
+  .form1 input[type="submit"],
+  .form1 input[type="button"]
+  {
+  background: #2471FF;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 3px solid #5994FF;
+  border-radius: 3px;
+  color: #D2E2FF;
+  }
+  .form1 input[type="submit"]:hover,
+  .form1 input[type="botton"]:hover
+  {
+  background: #6B9FFF;
+  color: #fff;
+  }
+  
+  input.yes-no + label{
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  }
+  input.yes-no + label:before,
+  input.yes-no + label:after{
+  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  font-family: "Roboto Slab",serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  }
+  input.yes-no + label:before{
+  background-color: #dddddd;
+  content: attr(data-off);
+  transition: transform 0.5s;  
+  backface-visibility: hidden;
+  }
+  input.yes-no + label:after{
+  background-color: #8ce196;
+  content: attr(data-on);
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  }
+  input.yes-no:checked + label:before{
+  transform: rotateY(180deg);
+  }
+  input.yes-no:checked + label:after{
+  transform: rotateY(0);
+  }
+
